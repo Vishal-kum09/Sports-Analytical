@@ -18,6 +18,7 @@
     "react-plotly.js": "^2.6.0"
   },
   "devDependencies": {
+    "@types/react-plotly.js": "^2.6.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
