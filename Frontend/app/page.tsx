@@ -11,7 +11,7 @@ export default function SportsDashboard() {
   const [loading, setLoading] = useState(true);
 
   // Note: Deployment ke waqt yahan apna Render URL dalna
-  const API_URL = 'http://127.0.0.1:8000';
+  const API_URL = 'https://sports-analytical-2.onrender.com';
 
   useEffect(() => {
     axios.get(`${API_URL}/stats`).then(res => {
