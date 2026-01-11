@@ -1,4 +1,4 @@
-@ts-nocheck
+//@ts-nocheck
 "use client";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -140,6 +140,7 @@ export default function SportsDashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-xl">
                 <h3 className="text-lg font-bold mb-4 flex items-center gap-2"><TrendingUp size={18} className="text-emerald-400"/> Match Scoring Momentum</h3>
+                // @ts-ignore
                 <Plot
                     data={[{ x: Object.keys(data.momentum_data), y: Object.values(data.momentum_data), type: 'scatter', mode: 'lines+markers', line: {color: '#10b981', width: 3}, marker: {size: 8, color: '#059669'} }]}
                     layout={{ autosize: true, paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)', font: {color: '#94a3b8'}, margin: {t:10, b:40, l:40, r:10}, xaxis: {gridcolor: '#1e293b'}, yaxis: {gridcolor: '#1e293b'} }}
