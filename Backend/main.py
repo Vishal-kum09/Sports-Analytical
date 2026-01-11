@@ -24,7 +24,7 @@ app.add_middleware(
 @app.get("/stats")
 def get_match_stats():
     try:
-        df = pd.read_csv('Sports_Data.csv')
+        df = pd.read_csv('Backend/Sports_Data.csv')
         
         # 1. Basic Summary
         total_runs = int(df['runs'].sum())
